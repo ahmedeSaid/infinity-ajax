@@ -1,0 +1,13 @@
+.container { max-width: 700px; padding: 0 16px; margin: 0 auto; -webkit-animation-delay: 1s; }
+.sandbox { background: url('images/bg-gradient.png') no-repeat center top; background-size: 100%; padding: 24px 0; position: relative; z-index: 999; pointer-events: none; -webkit-transform: translate3D(0, 0, 0); }
+.fixed + h3 { margin-top: 170px; }
+.fixed { position: fixed; margin: 0 auto; top: 0; left: 0; right: 0; }
+#animateTest { text-align: center; background: #123; padding: 20px 10px; width: 260px; color: #fff; margin: 0 auto; border-radius: 5px; font-weight: bold; -webkit-mask-image: -webkit-linear-gradient(#000, rgba(0, 0, 0, .9)); -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -ms-backface-visibility: hidden; -o-backface-visibility: hidden; backface-visibility: hidden; -webkit-animation-duration: 1s;  -webkit-animation-delay: .2s;
+-webkit-animation-timing-function: ease; -webkit-animation-fill-mode: both; -moz-animation-duration: 1s;  -moz-animation-delay: .2s;
+-moz-animation-timing-function: ease; -moz-animation-fill-mode: both; -ms-animation-duration: 1s;  -ms-animation-delay: .2s;
+-ms-animation-timing-function: ease; -ms-animation-fill-mode: both; -o-animation-duration: 1s;  -o-animation-delay: .2s;
+-o-animation-timing-function: ease; -o-animation-fill-mode: both; animation-duration: 1s;  animation-delay: .2s;
+animation-timing-function: ease; animation-fill-mode: both; }
+#animateTest p { margin: 0; }
+.butt { color: #777; background: transparent; padding: .4em .75em; font-weight: bold; text-decoration: none; border-radius: 5px; margin: .5em .25em .5em; line-height: 1.5em; display: inline-block; cursor: pointer; border: 1px solid #ddd; }
+.butt:hover { color: #fff; background: #59b1f6; border: 1px solid #2284d1; text-decoration: none; }

@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Simple Submit</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="robots" content="noindex, nofollow" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+<script src="jquery.validate.pack.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#simplesubmit").validate();
+});
+</script>
+	
+<style type="text/css">
+body {
+	font-family:Arial, Tahoma, sans-serif;  /* background and margin style  */
+	background: url(grey_wash_wall.png);
+    margin: 120px 20px 0px 20px; 
+	
+}
+
+#contact-wrapper {  /* border around the main wrapper  */
+	width:430px; 
+	border:1px solid #e2e2e2; 
+	background:#fbfbfb; 
+	padding:20px;
+	margin-left: auto ;
+    margin-right: auto ;
+	
+	
+}
+#contact-wrapper div { /* the inner contact wrapper dvi  */
+	clear:both; 
+	margin:1em 0;
+}
+#contact-wrapper label {  /* requirement alert font and color */
+	display:block; 
+	float:none; 
+	font-size:10px; color:#F00;
+	width:auto;
+ 
+}
+.labelname { /* label and input font and color  */
+	display:block; 
+	float:none;
+	font-size:13px; color:#333; font-family:Arial, Helvetica, sans-serif;
+	width:auto; 
+}
+form#simplesubmit input {  /* input style  */
+	border-color:#B7B7B7 #E8E8E8 #E8E8E8 #B7B7B7; 
+	border-style:solid; 
+	border-width:1px; 
+	padding:5px; 
+	font-size:13px; 
+	color:#333; 
+	background-color: #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+	background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+	background: -moz-linear-gradient(top, #ffffff, #dddddd);
+	background: -ms-linear-gradient(top, #ffffff, #dddddd);
+	background: -o-linear-gradient(top, #ffffff, #dddddd);
+	background: linear-gradient(top, #ffffff, #dddddd);
+}
+	
+
+form#simplesubmit select {  /* select style  */
+	border-color:#B7B7B7 #E8E8E8 #E8E8E8 #B7B7B7; 
+	border-style:solid; 
+	border-width:1px; 
+	padding:5px; 
+	font-size:13px; 
+	color:#333; 
+	background-color: #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+	background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+	background: -moz-linear-gradient(top, #ffffff, #dddddd);
+	background: -ms-linear-gradient(top, #ffffff, #dddddd);
+	background: -o-linear-gradient(top, #ffffff, #dddddd);
+	background: linear-gradient(top, #ffffff, #dddddd);
+}
+
+form#simplesubmit textarea {  /* textarea style  */
+	font-family:Arial, Tahoma, Helvetica, sans-serif; 
+	font-size:100%; 
+	padding:0.6em 0.5em 0.7em; 
+	border-color:#B7B7B7 #E8E8E8 #E8E8E8 #B7B7B7; 
+	border-style:solid; 
+	border-width:1px;
+	background-color: #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+	background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+	background: -moz-linear-gradient(top, #ffffff, #dddddd);
+	background: -ms-linear-gradient(top, #ffffff, #dddddd);
+	background: -o-linear-gradient(top, #ffffff, #dddddd);
+	background: linear-gradient(top, #ffffff, #dddddd);
+}
+
+button.submit { /* submit button style  */
+	background-color: #0078ff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0078ff), to(#00a8ff));
+	background: -webkit-linear-gradient(top, #0078ff, #00a8ff);
+	background: -moz-linear-gradient(top, #0078ff, #00a8ff);
+	background: -ms-linear-gradient(top, #0078ff, #00a8ff);
+	background: -o-linear-gradient(top, #0078ff, #00a8ff);
+	background: linear-gradient(top, #0078ff, #00a8ff);
+	border: 1px solid #0381c2;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #0381c2;
+	-webkit-box-shadow: 0 1px 0 0 #0381c2 inset ;
+	-moz-box-shadow: 0 1px 0 0 #0381c2 inset;
+	-ms-box-shadow: 0 1px 0 0 #0381c2 inset;
+	-o-box-shadow: 0 1px 0 0 #0381c2 inset;
+	color: white;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #006cff;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+button.submit:active {
+	border: 1px solid #cbcbcb;
+	box-shadow: 0 0 10px 5px #cbcbcb inset; 
+	-webkit-box-shadow:0 0 10px 5px #cbcbcb inset ;
+	-moz-box-shadow: 0 0 10px 5px #cbcbcb inset;
+	-ms-box-shadow: 0 0 10px 5px #cbcbcb inset;
+	-o-box-shadow: 0 0 10px 5px #cbcbcb inset;
+}
+
+button.reset { /* reset button style  */
+	background-color: #dddddd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+	background: -webkit-linear-gradient(top, #ffffff, #dddddd);
+	background: -moz-linear-gradient(top, #ffffff, #dddddd);
+	background: -ms-linear-gradient(top, #ffffff, #dddddd);
+	background: -o-linear-gradient(top, #ffffff, #dddddd);
+	background: linear-gradient(top, #ffffff, #dddddd);
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #eeeeee;
+	-webkit-box-shadow: 0 1px 0 0 #eeeeee inset ;
+	-moz-box-shadow: 0 1px 0 0 #eeeeee inset;
+	-ms-box-shadow: 0 1px 0 0 #eeeeee inset;
+	-o-box-shadow: 0 1px 0 0 #eeeeee inset;
+	color: #000000;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #eeeeee;
+}
+button.reset:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+button.reset:active {
+	border: 1px solid #eeeeee;
+	box-shadow: 0 0 10px 5px #eeeeee inset; 
+	-webkit-box-shadow:0 0 10px 5px #eeeeee inset ;
+	-moz-box-shadow: 0 0 10px 5px #eeeeee inset;
+	-ms-box-shadow: 0 0 10px 5px #eeeeee inset;
+	-o-box-shadow: 0 0 10px 5px #eeeeee inset;
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="contact-wrapper">
+
+<!-- logo -->
+<img src="logo.png" alt="" width="174" height="34" />
+<br />
+<br />
+<!--- logo ends -->
+
+
+<span class="labelname">Thank you. Your Request has been submitted. <br />
+</span><br />
+<!--- you can remove the following, but dont :D-->
+<span class="labelname">&copy;2013 <a href="http://www.techandall.com" target="_blank">TechAndAll.com</a></span></div>
+
+
+</body>
+</html>

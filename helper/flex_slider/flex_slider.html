@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+
+
+<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+
+
+</head>
+
+<body>
+
+
+<section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+            <a href=""><img src="kitchen_adventurer_cheesecake_brownie.jpg" /></a>  	    	    
+                <p class="flex-caption">Here we go again, history repeating!</p>
+  	    		</li>
+  	    		<li>
+                <a href=""><img src="kitchen_adventurer_lemon.jpg" /></a>  	    	    
+                <p class="flex-caption">Here we go again, history repeating 22222!</p>
+  	    		</li>
+  	    		<li>
+                <a href=""> <img src="kitchen_adventurer_donut.jpg" /></a>  	    	   
+                <p class="flex-caption">Here we go again, history repeating 33333!</p>
+  	    		</li>
+  	    		<li>
+                <a href=""><img src="kitchen_adventurer_caramel.jpg" /></a>  	    	    
+                <p class="flex-caption">Here we go again, history repeating4444!</p>
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+      
+      
+      
+       <script src="jquery.js"></script>
+       
+       
+      <!-- FlexSlider -->
+  <script defer src="jquery.flexslider.js"></script>
+  
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "fade",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+	  
+	  
+    });
+  </script>
+      
+</body>
+</html>

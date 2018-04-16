@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      jquery.diamonds.js demo
+    </title>
+    <link rel="stylesheet" type="text/css" href="../src/diamonds.css" />
+    <!--<link rel="stylesheet" type="text/css" href="demo.css" />-->
+  </head>
+<body> 
+     
+<!--<div class="diamondswrap" id="flickrItems"></div>-->
+  
+  <div class="diamondswrap">
+    <a href="#" class="item photo_a"></a>
+    <a href="#" class="item photo_b"></a>
+    <a href="#" class="item"></a>
+    <a href="#" class="item"></a>
+    <a href="#" class="item"></a>
+    <a href="#" class="item"></a>
+    <a href="#" class="item"></a>
+    <a href="#" class="item"></a>
+    <a href="#" class="item"></a>
+    <a href="#" class="item"></a>
+    <a href="#" class="item"></a>
+    <a href="#" class="item"></a>
+   
+</div>
+  
+ <!-- 
+  <div class="footer">
+    Photos from Flickr via. 
+    <a href="http://www.flickr.com/services/feeds/docs/photos_public/">
+      public API
+    </a>    
+  </div>-->
+  
+  
+<script type="text/javascript" src="jquery.js">
+  </script>
+  
+<script type="text/javascript" src="../src/jquery.diamonds.js">
+  </script>
+  
+  <script type="text/javascript" >
+  $(".diamondswrap").diamonds({
+    size: 250, // Size of the squares
+    gap: 5 // Pixels between squares
+});
+  </script>
+  
+<!-- <script type="text/javascript" src="demo.js"></script>-->
+</body>
+</html>

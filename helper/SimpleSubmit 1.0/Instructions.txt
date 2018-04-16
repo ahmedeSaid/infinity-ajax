@@ -1,0 +1,22 @@
+Thank you for Downloading SimpleSubmit 1.0
+--------------------------------------------
+If you did not download this file from http://www.techandall.com
+please let us know at info@techandall.com
+--------------------------------------------
+Website: http://www.techandall.com/
+Facebook: http://www.facebook.com/techandall
+Twitter: http://www.twitter.com/techandallcom
+Email: info@techandall.com
+--------------------------------------------
+
+Instructions:
+
+1. Upload the the folder content into your webserver
+2. Open file name submit_now.php with a text or HTML editor
+3. On line 15, add your email SUBJECT
+4. On line 16, add your emaill ADDRESS
+5. Save the changes
+6. On your brswer goto: http://www.yourdomain.com/simplesubmit/form.html
+
+Enjoy!
+
