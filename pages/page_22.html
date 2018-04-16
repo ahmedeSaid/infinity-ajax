@@ -1,0 +1,71 @@
+<!--Home page option 5-->
+
+<div class="container margin40">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 col-sm-12">
+      <div class="diamondswrap"> <a href="img/full/1.jpg" class="item photo_1"></a> <a href="img/full/2.jpg" class="item photo_2"></a> <a href="img/full/3.jpg" class="item photo_3"></a> <a href="img/full/4.jpg" class="item photo_4"></a> <a href="img/full/5.jpg" class="item photo_5"></a> <a href="img/full/6.jpg" class="item photo_6"></a> <a href="img/full/7.jpg" class="item photo_7"></a> <a href="img/full/8.jpg" class="item photo_8"></a> <a href="img/full/9.jpg" class="item photo_9"></a> <a href="img/full/10.jpg" class="item photo_10"></a> <a href="img/full/11.jpg" class="item photo_11"></a> <a href="img/full/12.jpg" class="item photo_12"></a> <a href="img/full/13.jpg" class="item photo_13"></a> <a href="img/full/14.jpg" class="item photo_14"></a> <a href="img/full/15.jpg" class="item photo_15"></a> <a href="img/full/16.jpg" class="item photo_16"></a> <a href="img/full/17.jpg" class="item photo_17"></a> <a href="img/full/18.jpg" class="item photo_18"></a> <a href="img/full/19.jpg" class="item photo_19"></a> <a href="img/full/20.jpg" class="item photo_20"></a> <a href="img/full/7.jpg" class="item photo_7"></a> <a href="img/full/1.jpg" class="item photo_1"></a> <a href="img/full/2.jpg" class="item photo_2"></a> <a href="img/full/3.jpg" class="item photo_3"></a> <a href="img/full/4.jpg" class="item photo_4"></a> <a href="img/full/5.jpg" class="item photo_5"></a> <a href="img/full/6.jpg" class="item photo_6"></a> <a href="img/full/7.jpg" class="item photo_7"></a> <a href="img/full/8.jpg" class="item photo_8"></a> <a href="img/full/9.jpg" class="item photo_9"></a> <a href="img/full/10.jpg" class="item photo_10"></a> <a href="img/full/11.jpg" class="item photo_11"></a> <a href="img/full/12.jpg" class="item photo_12"></a> <a href="img/full/13.jpg" class="item photo_13"></a> <a href="img/full/14.jpg" class="item photo_14"></a> <a href="img/full/15.jpg" class="item photo_15"></a> <a href="img/full/16.jpg" class="item photo_16"></a> <a href="img/full/17.jpg" class="item photo_17"></a> <a href="img/full/18.jpg" class="item photo_18"></a> <a href="img/full/19.jpg" class="item photo_19"></a> <a href="img/full/20.jpg" class="item photo_20"></a> <a href="img/full/7.jpg" class="item photo_7"></a> <a href="img/full/1.jpg" class="item photo_1"></a> <a href="img/full/2.jpg" class="item photo_2"></a> <a href="img/full/3.jpg" class="item photo_3"></a> <a href="img/full/4.jpg" class="item photo_4"></a> <a href="img/full/5.jpg" class="item photo_5"></a> <a href="img/full/6.jpg" class="item photo_6"></a> <a href="img/full/7.jpg" class="item photo_7"></a> <a href="img/full/8.jpg" class="item photo_8"></a> <a href="img/full/9.jpg" class="item photo_9"></a> <a href="img/full/10.jpg" class="item photo_10"></a> <a href="img/full/11.jpg" class="item photo_11"></a> <a href="img/full/12.jpg" class="item photo_12"></a> <a href="img/full/13.jpg" class="item photo_13"></a> <a href="img/full/14.jpg" class="item photo_14"></a> <a href="img/full/15.jpg" class="item photo_15"></a> <a href="img/full/16.jpg" class="item photo_16"></a> <a href="img/full/17.jpg" class="item photo_17"></a> <a href="img/full/18.jpg" class="item photo_18"></a> </div>
+    </div>
+  </div>
+</div>
+<div class="full_BG"></div>
+<!-- set the active class on whichever image you want to show up as the default 
+	  (otherwise this will be the last image) -->
+<div id="slideshow"> <img src="img/bg_slider/image1.jpg" alt=""/> <img src="img/bg_slider/image2.JPG" alt="" /> <img src="img/bg_slider/image3.jpg" alt="" /> <img src="img/bg_slider/image4.jpg" alt="" /> <img src="img/bg_slider/image21.JPG" alt="" /> <img src="img/bg_slider/image5.JPG" alt=""  class="active" /> <img src="img/bg_slider/image6.JPG" alt="" /> <img src="img/bg_slider/image7.jpg" alt="" /> <img src="img/bg_slider/image8.jpg" alt="" /> <img src="img/bg_slider/image9.JPG" alt="" /> <img src="img/bg_slider/image23.JPG" alt="" /> <img src="img/bg_slider/image10.JPG" alt="" /> <img src="img/bg_slider/image11.jpg" alt="" /> <img src="img/bg_slider/image12.jpg" alt="" /> <img src="img/bg_slider/image13.JPG" alt="" /> <img src="img/bg_slider/image22.JPG" alt="" /> <img src="img/bg_slider/image14.JPG" alt="" /> <img src="img/bg_slider/image15.jpg" alt="" /> <img src="img/bg_slider/image16.jpg" alt="" /> <img src="img/bg_slider/image24.JPG" alt="" /> <img src="img/bg_slider/image17.JPG" alt="" /> <img src="img/bg_slider/image18.jpg" alt="" /> <img src="img/bg_slider/image20.JPG" alt="" /> <img src="img/bg_slider/image19.jpg" alt="" /> <img src="img/bg_slider/image20.JPG" alt="" /> </div>
+<!--END BG slideshow -->
+
+<style>
+#big-video-wrap{display:none}
+</style>
+
+<!-- home BG Slider --> 
+<script>
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+    // uncomment the 3 lines below to pull the images in random order    
+    //var $sibs  = $active.siblings();
+    //var rndNum = Math.floor(Math.random() * $sibs.length );
+    //var $next  = $( $sibs[ rndNum ] );
+    $active.addClass('last-active');
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 3000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+$(function() {
+    setInterval( "slideSwitch()", 8000 );
+});
+</script> 
+
+
+<script type="text/javascript">
+$(document).ready(function() { 
+ 
+	<!--NiceScroll--> 
+	$(".scroller").getNiceScroll().resize()
+	
+	<!--diamonds Home Page-->   
+	 $(".diamondswrap").diamonds({
+	    size: 135, // Size of the squares
+	    gap: 1 // Pixels between squares
+	});
+
+	<!--Magnific Popup LightBox--> 
+	$('.diamondswrap').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          },         
+        }); 
+		
+	 });
+</script> 

@@ -1,0 +1,63 @@
+<!--coming soon-->
+
+<div class="container margin40">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 col-sm-12">
+      <div class="col-xs-12 col-md-4 col-sm-12">
+        <h3 class="tuned"> Stay tuned for something awesome.. </h3>
+        <div id="defaultCountdown"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="full_BG"></div>
+<!-- set the active class on whichever image you want to show up as the default 
+	  (otherwise this will be the last image) -->
+<div id="slideshow"> <img src="img/bg_slider/image1.jpg" alt=""/> <img src="img/bg_slider/image2.JPG" alt="" /> <img src="img/bg_slider/image3.jpg" alt="" /> <img src="img/bg_slider/image4.jpg" alt="" /> <img src="img/bg_slider/image21.JPG" alt="" /> <img src="img/bg_slider/image5.JPG" alt=""  class="active" /> <img src="img/bg_slider/image6.JPG" alt="" /> <img src="img/bg_slider/image7.jpg" alt="" /> <img src="img/bg_slider/image8.jpg" alt="" /> <img src="img/bg_slider/image9.JPG" alt="" /> <img src="img/bg_slider/image23.JPG" alt="" /> <img src="img/bg_slider/image10.JPG" alt="" /> <img src="img/bg_slider/image11.jpg" alt="" /> <img src="img/bg_slider/image12.jpg" alt="" /> <img src="img/bg_slider/image13.JPG" alt="" /> <img src="img/bg_slider/image22.JPG" alt="" /> <img src="img/bg_slider/image14.JPG" alt="" /> <img src="img/bg_slider/image15.jpg" alt="" /> <img src="img/bg_slider/image16.jpg" alt="" /> <img src="img/bg_slider/image24.JPG" alt="" /> <img src="img/bg_slider/image17.JPG" alt="" /> <img src="img/bg_slider/image18.jpg" alt="" /> <img src="img/bg_slider/image20.JPG" alt="" /> <img src="img/bg_slider/image19.jpg" alt="" /> <img src="img/bg_slider/image20.JPG" alt="" /> </div>
+<!--END BG slideshow -->
+
+<style>
+#big-video-wrap{display:none}
+</style>
+
+<!--countdown --> 
+<script type="text/javascript">
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear() + 1, 12 - 1, 26);
+	$('#defaultCountdown').countdown({until: austDay});
+	$('#year').text(austDay.getFullYear());
+});
+</script> 
+
+<!-- home BG Slider --> 
+<script>
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+    // uncomment the 3 lines below to pull the images in random order    
+    //var $sibs  = $active.siblings();
+    //var rndNum = Math.floor(Math.random() * $sibs.length );
+    //var $next  = $( $sibs[ rndNum ] );
+    $active.addClass('last-active');
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 3000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+$(function() {
+    setInterval( "slideSwitch()", 8000 );
+});
+</script> 
+
+<script type="text/javascript">
+$(document).ready(
+function() {
+$(".scroller").getNiceScroll().resize()
+}
+);
+</script> 
